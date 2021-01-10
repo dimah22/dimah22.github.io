@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Dimah's Example</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="style.css" rel="stylesheet">
+<link href="https://fonts.google.com/specimen/Roboto+Mono?selection.family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <p>Header</p>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About us</a></li>
+      <li><a href="#">Applications</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+   
+   <form>
+  <label for="userNsearch">User Name</label>
+  <input onkeyup="buttonstate()"type="search" id="userNsearch">
+  
+  <label for="Appsearch">Application name</label>
+  <input onkeyup="buttonstate()"type="search" id="Appsearch" list="Apps">
+   <datalist id="Apps">
+    <option value="Application1">
+    <option value="Application2">
+    <option value="Application3">
+    <option value="Application4">
+    <option value="Application5">
+  </datalist>
+  
+  <button id="btnSearch" type="submit" disabled>Search</button>
+  
+</form>
+
+   <table>
+  <tr>
+    <th>User Name</th>
+    <th>Application Name</th>
+    <th>Roles</th>
+  </tr>
+  <tr>
+    <td>User1</td>
+    <td>Application1</td>
+    <td> <input checked type="checkbox" id="Role1" value="Role1">
+  <label for="Role1">Role1</label><br>
+  <input type="checkbox" id="Role2" value="Role2">
+  <label for="Role2">Role2</label><br>
+  <input type="checkbox" id="Role3" value="Role3">
+  <label for="Role3">Role3</label><br><br></td>
+  </tr>
+  <tr>
+    <td>User2</td>
+    <td>Application2</td>
+    <td><input type="checkbox" id="Role1" value="Role1">
+  <label for="Role1">Role1</label><br>
+  <input checked type="checkbox" id="Role2" value="Role2">
+  <label for="Role2">Role2</label><br>
+  <input checked type="checkbox" id="Role3" value="Role3">
+  <label for="Role3">Role3</label><br><br></td>
+  </tr>
+  <tr>
+    <td>User3</td>
+    <td>Application3</td>
+    <td><input checked type="checkbox" id="Role1" value="Role1">
+  <label for="Role1">Role1</label><br>
+  <input checked type="checkbox" id="Role2" value="Role2">
+  <label for="Role2">Role2</label><br>
+  <input checked type="checkbox" id="Role3" value="Role3">
+  <label for="Role3">Role3</label><br><br></td>
+  </tr>
+  <tr>
+    <td>User4</td>
+    <td>Application4</td>
+    <td><input type="checkbox" id="Role1" value="Role1">
+  <label for="Role1">Role1</label><br>
+  <input type="checkbox" id="Role2" value="Role2">
+  <label for="Role2">Role2</label><br>
+  <input checked type="checkbox" id="Role3" value="Role3">
+  <label for="Role3">Role3</label><br><br></td>
+  </tr>
+  <tr>
+    <td>User5</td>
+    <td>Application5</td>
+    <td><input checked type="checkbox" id="Role1" value="Role1">
+  <label for="Role1">Role1</label><br>
+  <input checked type="checkbox" id="Role2" value="Role2">
+  <label for="Role2">Role2</label><br>
+  <input type="checkbox" id="Role3" value="Role3">
+  <label for="Role3">Role3</label><br><br></td>
+  </tr>
+  <tr>
+    <td>User6</td>
+    <td>Application6</td>
+    <td><input  type="checkbox" id="Role1" value="Role1">
+  <label for="Role1">Role1</label><br>
+  <input checked type="checkbox" id="Role2" value="Role2">
+  <label for="Role2">Role2</label><br>
+  <input checked type="checkbox" id="Role3" value="Role3">
+  <label for="Role3">Role3</label><br><br></td>
+  </tr>
+</table>
+   
+   
+   
+  </article>
+</section>
+
+<footer>
+  <p>Footer</p>
+</footer>
+
+</body>
+<script src="script.js"></script>
+</html>
